@@ -1,0 +1,186 @@
+
+@font-face {
+    font-family: 'pirata_oneregular';
+    src: url('pirataone-regular-webfont.woff2') format('woff2'),
+         url('pirataone-regular-webfont.woff') format('woff');
+
+}
+
+body { background-color: #26262C;
+    width: 100%;
+    
+}
+
+main {
+    border: 20px solid black;
+}
+
+.grid-container {width: 640px;
+  height: 640px;
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px;
+  gap: 0px 0px;
+  grid-template-areas:
+                        "A1 B1 C1 D1 E1 F1 G1 H1" 
+                        "A2 B2 C2 D2 E2 F2 G2 H2"
+                        "A3 B3 C3 D3 E3 F3 G3 H3"
+                        "A4 B4 C4 D4 E4 F4 G4 H4"
+                        "A5 B5 C5 D5 E5 F5 G5 H5"
+                        "A6 B6 C6 D6 E6 F6 G6 H6"
+                        "A7 B7 C7 D7 E7 F7 G7 H7"
+                        "A8 B8 C8 D8 E8 F8 G8 H8";
+    background-image: url(https://i.postimg.cc/Y9FDDhnV/chessboard.jpg);
+    background-size: 25%;
+    background-repeat: repeat;
+    margin: auto;
+}
+
+
+
+
+.horizon { position: relative;
+    width: 640px;
+     grid-row: 1/8;
+    
+}
+
+.vertic { 
+    margin-top: -180px;
+    margin-left: -15px;
+    height: auto;
+    grid-column: 1/8;
+    
+}
+
+.letters { 
+    margin-left: -610px;
+    margin-top: -20px;
+    font-family:'pirata_oneregular';
+    color: floralwhite;
+    grid-column: 1/8;
+    letter-spacing: 36px;
+
+    
+}
+
+.numbers { font-family:'pirata_oneregular';
+    color: floralwhite;
+    grid-row: 1/8;
+    line-height: 66px;
+    
+}
+    
+    
+
+    
+img { height: 50px;
+    margin-left: 25px;
+    margin-top: 10px;
+    
+}
+
+
+.rookblack1 {
+    grid-area: A1;
+}
+.knightblack1 {
+    grid-area: B1;
+}
+.bishopblack1 {
+    grid-area: C1;
+}
+.kingblack {
+    grid-area: D1;
+}
+.queenblack {
+    grid-area: E1;
+}
+.bishopblack2 {
+    grid-area: F1;
+}
+.knightblack2 {
+    grid-area: G1;
+}
+.rookblack2 {
+    grid-area: H1;
+}
+
+
+.pawnblack1 {
+    grid-area: A2;
+}
+.pawnblack2 {
+    grid-area: B2;
+}
+.pawnblack3 {
+    grid-area: C2;
+}
+.pawnblack4 {
+    grid-area: D2;
+}
+.pawnblack5 {
+    grid-area: E2;
+}
+.pawnblack6 {
+    grid-area: F2;
+}
+.pawnblack7 {
+    grid-area: G2;
+}
+.pawnblack8 {
+    grid-area: H2;
+}
+
+
+.rookwhite1 {
+    grid-area: A8;
+}
+.knightwhite1 {
+    grid-area: B8;
+}
+.bishopwhite1 {
+    grid-area: C8;
+}
+.kingwhite {
+    grid-area: D8;
+}
+.queenwhite {
+    grid-area: E8;
+}
+.bishopwhite2 {
+    grid-area: F8;
+}
+.knightwhite2 {
+    grid-area: G8;
+}
+.rookwhite2 {
+    grid-area: H8;
+}
+
+
+.pawnwhite1 {
+    grid-area: A7;
+}
+.pawnwhite2 {
+    grid-area: B7;
+}
+.pawnwhite3 {
+    grid-area: C7;
+}
+.pawnwhite4 {
+    grid-area: D7;
+}
+.pawnwhite5 {
+    grid-area: E7;
+}
+.pawnwhite6 {
+    grid-area: F7;
+}
+.pawnwhite7 {
+    grid-area: G7;
+}
+.pawnwhite8 {
+    grid-area: H7;
+}
+
